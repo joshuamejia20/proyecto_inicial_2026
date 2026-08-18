@@ -1,3 +1,20 @@
-<p>Ricardo Presentación</p>
-<p>Josué Menjivar</p>
-<p>Esdras Ronaldo Palacios</p>
+<h5>
+    Ficha del empleado
+</h5>
+<p>
+    Nombre del empleado: {{ nombre }}
+</p>
+<p>
+    Apellido del empleado: {{ apellido }}
+</p>
+<p>
+    Edad del empleado: {{ edad - 10 }}
+</p>
+<p>
+    Edad del empleado: {{ (edad < 18) ? "Menor de edad" : "Mayor de edad" }}
+</p>
+<p>
+    Nombre de la Empresa: {{ empresa.value }}
+</p>
+Introduce la empresa: <input type="text" #empresa (keyup)="0"><br>
+<!--<button (click)="llamar_empresa(empresa.value)">Cambiar</button>-->
